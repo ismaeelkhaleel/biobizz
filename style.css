@@ -1,0 +1,213 @@
+.nav-link {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-left: auto;
+    position: relative;
+    margin-right: 0.5rem;
+}
+
+.navbar-brand img {
+    width: 150px;
+}
+
+@media (max-width: 768px) {
+    .navbar-brand img {
+        width: 100px;
+    }
+
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding-left: 20px;
+}
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    /* Position below the text */
+    left: 50%;
+    /* Start at the middle */
+    width: 0;
+    height: 2px;
+    background: #007BFF;
+    transition: all 0.7s ease;
+    transform: translateX(-50%);
+}
+
+.nav-link:hover::after {
+    width: 100%;
+    /* Expand to full width */
+    left: 0;
+    /* Move to the left */
+    transform: translateX(0);
+}
+
+.nav-link.active {
+    color: #007bff !important;
+    /* Blue background */
+}
+
+/* Styling for the video container */
+/* Styling for the video container */
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Full screen height */
+    overflow: hidden;
+}
+
+.background-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    /* Ensures the video covers the area without distortion */
+}
+
+/* Styling for social media icons */
+.social-icons {
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    /* Distance from the right edge */
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    /* Space between icons */
+}
+
+.social-icons a img {
+    width: 40px;
+    /* Icon size */
+    height: 40px;
+    transition: transform 0.3s ease;
+    /* Smooth hover effect */
+}
+
+.social-icons a img:hover {
+    transform: scale(1.2);
+    /* Scale effect on hover */
+}
+
+/* Styling for the scroll box */
+.scroll-box {
+    width: 90%;
+    /* Width of the box */
+    height: 400px;
+    overflow: hidden;
+    /* Hide the overflowed text */
+    position: relative;
+    /* Needed for absolute positioning of the text */
+    background-color: #19b26d;
+    /* Background color */
+}
+.box-head h3 {
+    background-color: #19b26d;
+    color:#12876f;
+    z-index: 10;
+    text-align: center;
+    padding: 10px;
+}
+/* Styling for the scrolling text */
+.scroll-text {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    animation: scroll-up 7s linear infinite;
+    /* Scroll effect */
+    padding-right: 10px;
+}
+
+/* Keyframes for the scroll-up animation */
+@keyframes scroll-up {
+    0% {
+        bottom: 0%;
+    }
+
+    100% {
+        bottom: 100%;
+    }
+}
+.scroll-text ul {
+    list-style-type: none; /* Remove bullet points */
+    
+}
+
+.scroll-text a {
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #333;
+    text-decoration: none;
+}
+.scroll-text a li {
+    margin-bottom: 1rem;
+}
+
+.extra-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.extra-item img {
+    width: 20%;
+    text-align: center;
+}
+.extra-item a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 10px;
+    text-align: center;
+    color: #000080;
+    margin-bottom: 40px;
+}
+.col-md-12 p {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 30px;
+}
+.other-section {
+    background-color: #e06100;
+    margin-top: 40px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+}
+.other-section h1 {
+    font-weight: bold;
+    color: black;
+    text-align: center;
+}
+.other-content {
+     text-align: center;
+}
+.other-content .btn {
+    margin-top: 20px;
+    box-shadow: 2px 2px 2px 2px #000000;
+    font-weight: 600;
+}
+.other-link {
+    text-align: center;
+    margin-top: 50px;
+}
+.other-link a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+}
+.footer {
+    background-color: rgb(218, 213, 213);
+    text-align: center;
+    padding: 20px;
+}
+.footer p {
+    font-weight: 600;
+}
